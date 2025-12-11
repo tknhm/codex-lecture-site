@@ -1,4 +1,5 @@
 # Repository Guidelines
+- 日本語で簡潔かつ丁寧に回答してください。
 
 ## Project Structure & Module Organization
 - 現在は `index.html` と `README.md` をルート直下に置いたシンプルな構成なので、コンテンツ拡張時は `src/` や `assets/` などディレクトリで階層化する。
