@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-label="Mountain mist">
+  <rect width="200" height="120" fill="#f6f9ff" rx="20" />
+  <polygon points="0,120 40,60 80,90 120,40 160,80 200,100" fill="#8fbf9d" />
+  <polygon points="20,120 70,70 120,100 180,40 220,90" fill="#679c76" opacity="0.8" />
+  <circle cx="150" cy="40" r="22" fill="#fff5db" />
+</svg>

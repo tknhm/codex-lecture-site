@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-label="City billboard">
+  <rect width="200" height="120" fill="#1b1b2f" rx="20" />
+  <rect x="10" y="60" width="180" height="40" fill="#ff79c6" rx="10" />
+  <rect x="30" y="40" width="40" height="15" fill="#8be9fd" rx="4" />
+  <rect x="80" y="30" width="60" height="12" fill="#f1fa8c" rx="6" />
+  <rect x="140" y="50" width="30" height="10" fill="#ffb86c" rx="5" />
+</svg>

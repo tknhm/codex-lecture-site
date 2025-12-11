@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-label="Sakamichi dusk">
+  <rect width="200" height="120" fill="#fbe3e7" rx="20" />
+  <path d="M0 90 Q50 60 100 90 T200 90 L200 120 L0 120 Z" fill="#d87b9b" />
+  <rect x="40" y="60" width="40" height="50" rx="8" fill="#ffffff" opacity="0.9" />
+  <rect x="110" y="40" width="60" height="70" rx="8" fill="#5f3450" />
+</svg>

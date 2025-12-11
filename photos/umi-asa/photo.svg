@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-label="Sea morning">
+  <rect width="200" height="120" fill="#ffe8d8" rx="20" />
+  <circle cx="150" cy="40" r="30" fill="#fff3c7" />
+  <path d="M0 90 Q60 70 120 90 T200 90 L200 120 L0 120 Z" fill="#6ecbed" />
+  <rect y="90" width="200" height="30" fill="#44a0d5" />
+</svg>
