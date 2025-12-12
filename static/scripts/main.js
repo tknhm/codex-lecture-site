@@ -9,21 +9,38 @@ let scrollLeft = 0;
 let isManual = false;
 let animationId;
 const autoScrollSpeed = 0.35;
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let isPaused = false;
+let selectedButton;
 
 const showDetail = (button) => {
+  if (selectedButton) selectedButton.classList.remove('is-selected');
+  selectedButton = button;
+  selectedButton.classList.add('is-selected');
   detailTitle.textContent = button.dataset.title;
   detailComment.textContent = button.dataset.comment;
-  detailImage.style.background = button.dataset.image;
+  detailImage.style.backgroundImage = `url("${button.dataset.image}")`;
 };
 
 const createCarouselItem = (title, comment, imagePath) => {
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'carousel-item';
-  button.textContent = title;
+  button.setAttribute('aria-label', title);
+  button.setAttribute('aria-controls', 'photo-detail');
   button.dataset.title = title;
   button.dataset.comment = comment;
-  button.dataset.image = `url("${imagePath}")`;
+  button.dataset.image = imagePath;
+  const thumb = document.createElement('img');
+  thumb.className = 'carousel-thumb';
+  thumb.src = imagePath;
+  thumb.alt = title;
+  thumb.draggable = false;
+  button.appendChild(thumb);
+  const srLabel = document.createElement('span');
+  srLabel.className = 'sr-only';
+  srLabel.textContent = title;
+  button.appendChild(srLabel);
   button.addEventListener('click', () => showDetail(button));
   carouselTrack.appendChild(button);
   return button;
@@ -40,7 +57,7 @@ const wrapScroll = () => {
 };
 
 const animate = () => {
-  if (!isManual) {
+  if (!isManual && !isPaused) {
     carousel.scrollLeft += autoScrollSpeed;
     wrapScroll();
   }
@@ -113,7 +130,9 @@ const initGallery = async () => {
   if (baseButtons[0]) {
     showDetail(baseButtons[0]);
   }
-  animate();
+  if (!prefersReducedMotion.matches) {
+    animate();
+  }
 };
 
 carousel.addEventListener('mousedown', (e) => handleDragStart(e.pageX));
@@ -126,5 +145,20 @@ carousel.addEventListener('mousemove', (e) => {
 carousel.addEventListener('touchstart', (e) => handleDragStart(e.touches[0].pageX));
 carousel.addEventListener('touchmove', (e) => handleDragMove(e.touches[0].pageX));
 carousel.addEventListener('touchend', handleDragEnd);
+carousel.addEventListener('pointerenter', () => {
+  isPaused = true;
+});
+carousel.addEventListener('pointerleave', () => {
+  isPaused = false;
+});
+carousel.addEventListener('focusin', () => {
+  isPaused = true;
+});
+carousel.addEventListener('focusout', () => {
+  isPaused = false;
+});
+document.addEventListener('visibilitychange', () => {
+  isPaused = document.hidden;
+});
 
 initGallery();

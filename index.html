@@ -4,59 +4,171 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>さかたの旅ノート</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="さかたの旅ノート。旅と写真で心を整える、静かな記録。" />
+    <link rel="stylesheet" href="static/styles/main.css" />
   </head>
   <body>
+    <a class="skip-link" href="#photos">写真ホイールへ</a>
     <main>
       <section class="hero">
         <div>
           <p class="label">Profile</p>
-          <h1>さかた</h1>
-          <p class="subhead">会社員 / 旅の思い出を彩る人</p>
-          <p class="intro">
-            仕事に追われる日々の中、旅先で撮った写真がひとときのリセットに。ここでは特に印象的な風景や瞬間を、色鮮やかにまとめています。
-          </p>
-          <a
-            class="instagram"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Instagram"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <linearGradient id="insta" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#f58529" />
-                <stop offset="30%" stop-color="#dd2a7b" />
-                <stop offset="65%" stop-color="#8134af" />
-                <stop offset="100%" stop-color="#515bd4" />
-              </linearGradient>
-              <path
-                fill="url(#insta)"
-                d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm7.5-1A1.5 1.5 0 1116 7.5 1.5 1.5 0 0119.5 6z"
-              />
-            </svg>
-            Instagram
-          </a>
-        </div>
-        <div class="hero-panel">
-          <p class="hero-label">旅のフォトノート</p>
-          <div class="photo-grid">
-            <div class="photo">沖縄の朝焼け</div>
-            <div class="photo">北陸の街並み</div>
-            <div class="photo">瀬戸内の島々</div>
-            <div class="photo">蔵王の新緑</div>
+          <div class="hero-head">
+            <div class="avatar" aria-hidden="true">
+              <svg class="avatar-illustration" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <defs>
+                  <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#7a2b4c" />
+                    <stop offset="1" stop-color="#d1457b" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M14 30c0-12 8.5-20 18-20s18 8 18 20c0 0-2.5-10-10-12-2.5 2.8-7.3 5-12 5s-9.4-2.2-12-5c-7.5 2-10 12-10 12z"
+                  fill="url(#hair)"
+                  opacity="0.95"
+                />
+                <circle cx="32" cy="36" r="16" fill="#ffe3ea" />
+                <circle cx="25" cy="35" r="2.2" fill="#3a1a2b" />
+                <circle cx="39" cy="35" r="2.2" fill="#3a1a2b" />
+                <path d="M28 41c2.5 2.8 5.5 2.8 8 0" fill="none" stroke="#6f1d47" stroke-width="2" stroke-linecap="round" />
+                <circle cx="22" cy="40" r="3" fill="#ffb8c8" opacity="0.75" />
+                <circle cx="42" cy="40" r="3" fill="#ffb8c8" opacity="0.75" />
+                <path
+                  d="M20 22c3.5 5.5 9 7 12 7s8.5-1.5 12-7"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  opacity="0.65"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="name-row">
+                <h1>さかた</h1>
+                <a
+                  class="instagram-inline"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <linearGradient id="insta" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#f58529" />
+                      <stop offset="30%" stop-color="#dd2a7b" />
+                      <stop offset="65%" stop-color="#8134af" />
+                      <stop offset="100%" stop-color="#515bd4" />
+                    </linearGradient>
+                    <path
+                      fill="url(#insta)"
+                      d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm7.5-1A1.5 1.5 0 1116 7.5 1.5 1.5 0 0119.5 6z"
+                    />
+                  </svg>
+                  <span class="sr-only">Instagram</span>
+                </a>
+              </div>
+              <p class="subhead">会社員 / 旅と写真で心を整える</p>
+            </div>
           </div>
+          <p class="intro">
+            機械的な日常から少しだけ離れて、旅先の光と空気に目を合わせることでバランスを取り戻すタイプです。ここでは仕事と旅のリズム、写真の撮り方、そして「何を大切にして旅するか」をまとめています。
+          </p>
+          <div class="badge-row" aria-label="旅のキーワード">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 2c3.866 0 7 3.134 7 7 0 4.667-7 13-7 13S5 13.667 5 9c0-3.866 3.134-7 7-7zm0 4a3 3 0 100 6 3 3 0 000-6z"/>
+              </svg>
+              港町
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M9 3a3 3 0 00-3 3v1H4a2 2 0 00-2 2v9a3 3 0 003 3h14a3 3 0 003-3V9a2 2 0 00-2-2h-2V6a3 3 0 00-3-3H9zm0 2h6a1 1 0 011 1v1H8V6a1 1 0 011-1zm3 5a4 4 0 110 8 4 4 0 010-8z"/>
+              </svg>
+              写真
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 4a8 8 0 018 8c0 1.92-.676 3.682-1.802 5.061l1.74 1.74-1.414 1.414-1.74-1.74A7.964 7.964 0 0112 20a8 8 0 110-16zm-1 3v6l5 3 .999-1.732L11 12.3V7h-2z"/>
+              </svg>
+              朝焼け
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 2l1.5 5H19l-4.2 3 1.6 5L12 12.9 7.6 15 9.2 10 5 7h5.5L12 2z"/>
+              </svg>
+              余白
+            </span>
+          </div>
+          <div class="hero-panel panel-section" aria-label="旅のスタイル">
+            <p class="panel-title">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M7 2h10v2H7V2zm-2 4h14l-1 16H6L5 6zm4 3v8h2V9H9zm4 0v8h2V9h-2z"/>
+              </svg>
+              旅のスタイル
+            </p>
+            <div class="facts-grid">
+              <div class="fact">
+                <span class="fact-label">Pace</span>
+                <span class="fact-value">歩いて、見つける</span>
+              </div>
+              <div class="fact">
+                <span class="fact-label">Focus</span>
+                <span class="fact-value">光・影・空気感</span>
+              </div>
+              <div class="fact">
+                <span class="fact-label">Rule</span>
+                <span class="fact-value">荷物は最小限</span>
+              </div>
+            </div>
+          </div>
+          <div class="cta-row" aria-label="外部リンクと導線">
+            <a class="button button-secondary" href="#photos">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 16l-6-6h12l-6 6z"/>
+              </svg>
+              旅のおもいでへ
+            </a>
+          </div>
+          <p class="fineprint">
+            <strong>メモ：</strong>このページは「旅のしおり」的に、少しずつ更新していきます。
+          </p>
+        </div>
+        <div class="hero-panel profile-panel">
+          <p class="hero-label">Profile Snapshot</p>
+          <ul class="profile-list">
+            <li>
+              <span class="profile-label">旅のタイプ</span>
+              <span>四季折々の自然と小さな港町を巡る、ゆったり派</span>
+            </li>
+            <li>
+              <span class="profile-label">旅の流儀</span>
+              <span>必要最小限の荷物で、現地の空気にじっくり触れるように歩きます</span>
+            </li>
+            <li>
+              <span class="profile-label">直近の旅</span>
+              <span>瀬戸内の島々 → 高知の海岸線 → 北陸の古民家ステイ</span>
+            </li>
+            <li>
+              <span class="profile-label">元気の素</span>
+              <span>朝焼け前の静けさと、旅先で出会う人の笑顔</span>
+            </li>
+            <li>
+              <span class="profile-label">旅の道具</span>
+              <span>軽いカメラ / 小さなノート / 歩きやすい靴（迷ったら“軽さ優先”）</span>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="photo-wheel">
-        <h2>写真ホイール</h2>
+      <section class="photo-wheel" id="photos">
+        <h2>旅のおもいで</h2>
         <p>
-          横一列でくるくる回るように見せるカルーセル。クリックするとカメラロールから引き出したコメントと一緒に拡大表示されます。
+          旅先で拾った光と気配を、少しずつ増やしていきます。
         </p>
         <div class="carousel" aria-label="旅写真を回すカルーセル">
           <div class="carousel-track"></div>
         </div>
-        <div class="photo-detail">
+        <div class="photo-detail" id="photo-detail">
           <div class="detail-image"></div>
           <div class="detail-text">
             <h3 class="detail-title">クリックしてコメントを表示</h3>
@@ -65,6 +177,6 @@
         </div>
       </section>
     </main>
-    <script src="script.js" defer></script>
+    <script src="static/scripts/main.js" defer></script>
   </body>
 </html>

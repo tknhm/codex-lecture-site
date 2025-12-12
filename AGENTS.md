@@ -1,10 +1,12 @@
 # Repository Guidelines
 - 日本語で簡潔かつ丁寧に回答してください。
+- ソースコードを変更したら、変更内容に合わせてREADME.mdも更新してください。
 
 ## Project Structure & Module Organization
-- 現在は `index.html` と `README.md` をルート直下に置いたシンプルな構成なので、コンテンツ拡張時は `src/` や `assets/` などディレクトリで階層化する。
+- 現在は `index.html`（ページ本体）/ `static/`（CSS/JS）/ `photos/`（ギャラリー素材）/ `README.md`（説明）のシンプル構成。コンテンツ拡張時は役割ごとにディレクトリで階層化する。
 - ページ固有の CSS/JavaScript を追加する場合は `static/` か `public/` を新設し、リンクやスクリプト参照を `index.html` から明示的に指定する。
 - モジュールや UI セクションを増やす際は `AGENTS.md` と `README.md` を更新し、何をどこに置くかを記述して導線を明確にする。
+- 現在は hero でプロフィール文とプロフィール一覧を左右に並べ、下段で写真ホイールとして旅のスナップを回す構成なので、そのまま維持する場合も説明を最新版にすること。
 
 ## Build, Test, and Development Commands
 - 現在は静的 HTML のためビルド/テストは不要。将来的にツールチェーン（Vite, Next.js など）を導入するときは `package.json` に `npm run build`/`npm run dev` を追加。
