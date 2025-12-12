@@ -3,5 +3,6 @@
   { "folder": "sakamichi-yuukei", "title": "坂道の夕景", "image": "photo.svg", "commentFile": "comment.txt" },
   { "folder": "shima-kaze", "title": "島の風", "image": "photo.svg", "commentFile": "comment.txt" },
   { "folder": "yama-asama", "title": "山の朝靄", "image": "photo.svg", "commentFile": "comment.txt" },
-  { "folder": "machi-billboard", "title": "街のビルボード", "image": "photo.svg", "commentFile": "comment.txt" }
+  { "folder": "machi-billboard", "title": "街のビルボード", "image": "photo.svg", "commentFile": "comment.txt" },
+  { "folder": "hakodate", "title": "函館空港", "image": "photo.svg", "commentFile": "comment.txt" }
 ]

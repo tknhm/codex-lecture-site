@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-label="Hakodate airport">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7c7d7" />
+      <stop offset="1" stop-color="#ffe8d8" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="120" fill="url(#sky)" rx="20" />
+  <circle cx="154" cy="34" r="18" fill="#fff3c7" />
+  <path d="M0 84 Q55 72 110 84 T200 84 L200 120 L0 120 Z" fill="#6ecbed" opacity="0.9" />
+  <rect y="84" width="200" height="36" fill="#44a0d5" opacity="0.95" />
+  <path d="M25 78 H175" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.55" />
+  <path
+    d="M66 58l44-6 8-8 6 2-6 10 6 6-4 4-10-4-34 8-10 10-6-2 8-10-10-6 4-4 10 4z"
+    fill="#ffffff"
+    opacity="0.9"
+  />
+</svg>
