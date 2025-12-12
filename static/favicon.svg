@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="さかたの旅ノート">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd6c6"/>
+      <stop offset="0.5" stop-color="#ffb9cf"/>
+      <stop offset="1" stop-color="#d1457b"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="30%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="30" fill="url(#bg)"/>
+  <circle cx="32" cy="32" r="30" fill="url(#shine)"/>
+
+  <path d="M24 23.5c1-2.3 2.4-3.5 4.7-3.5h6.6c2.3 0 3.7 1.2 4.7 3.5H44c2.1 0 3.8 1.7 3.8 3.8v12.6c0 2.1-1.7 3.8-3.8 3.8H20c-2.1 0-3.8-1.7-3.8-3.8V27.3c0-2.1 1.7-3.8 3.8-3.8h4z"
+        fill="rgba(255,255,255,0.88)"/>
+  <circle cx="32" cy="34" r="7.2" fill="rgba(209,69,123,0.18)"/>
+  <circle cx="32" cy="34" r="4.7" fill="#d1457b"/>
+  <circle cx="32" cy="34" r="2.4" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="43.5" cy="29.3" r="1.5" fill="#6f1d47" opacity="0.55"/>
+
+  <path d="M14.5 19.5l2.3.7.7 2.3.7-2.3 2.3-.7-2.3-.7-.7-2.3-.7 2.3-2.3.7z"
+        fill="rgba(255,255,255,0.75)"/>
+</svg>
