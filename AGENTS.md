@@ -1,6 +1,7 @@
 # Repository Guidelines
 - 日本語で簡潔かつ丁寧に回答してください。
 - ソースコードを変更したら、変更内容に合わせてREADME.mdも更新してください。
+- 私が変更した文章や削除したオブジェクトは指示がない限り復元しないでください。
 
 ## Project Structure & Module Organization
 - 現在は `index.html`（ページ本体）/ `static/`（CSS/JS）/ `photos/`（ギャラリー素材）/ `README.md`（説明）のシンプル構成。コンテンツ拡張時は役割ごとにディレクトリで階層化する。
